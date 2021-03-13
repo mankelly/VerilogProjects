@@ -16,6 +16,8 @@
   * **Bit [4]** is used for shift left/right or doing a single operation on A/B (bit is labeled *op* in ALU).
   * **Bit [5]** is used for determining if there is a carry or borrow (bit is labeled *c_b* in ALU).
 * Below are all 16 operations (opcode[3:0])
+
+
 |opcode[3:0]|Operation|op/c_b|
 | :------- | ----: | :---: |
 | 4'b0000 | | add | | N/A |
