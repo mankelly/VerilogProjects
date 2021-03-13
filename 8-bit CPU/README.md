@@ -11,7 +11,7 @@
   * opcode (tells the ALU what operation to perform).
   * Y (output of the ALU).
 
-* **opcode[7:0]** takes many 8-bit values. 
+* **opcode[7:0]** observes many, but not all 8-bit values. 
   * The **lower 4 bits [3:0]** are used for the operations. 
   * **Bit [4]** is used for shift left/right or doing a single operation on A/B (bit is labeled *op* in ALU).
   * **Bit [5]** is used for determining if there is a carry or borrow (bit is labeled *c_b* in ALU).
