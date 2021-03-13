@@ -1,5 +1,6 @@
 # 8-bit CPU [Manuel Kelly]
 ### 8-bit RISC CPU written in SystemVerilog [INCOMPLETE TESTBENCH]
+* TB does not show all operations.
 * All ALU instructions were followed by this [Wikipedia page](https://en.wikipedia.org/wiki/Arithmetic_logic_unit).
 * For simplicity of testbenching, this CPU can write instructions to be written to memory.
 * The CPU reads instructions from memory, every clock cycle.
