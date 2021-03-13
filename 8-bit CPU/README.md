@@ -36,3 +36,5 @@
 | 4'b1101 | logical shift | op == 1 shift left, else shift right |
 | 4'b1110 | rotate | op == 1 rotate left, else rotate right |
 | 4'b1111 | rotate through carry | op == 1 rotate left, else rotate right; c_b == carry |
+
+![RTL Design](./Pictures/RTL_Design)
