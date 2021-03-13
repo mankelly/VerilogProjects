@@ -37,6 +37,7 @@
 | 4'b1110 | rotate | op == 1 rotate left, else rotate right |
 | 4'b1111 | rotate through carry | op == 1 rotate left, else rotate right; c_b == carry |
 
+
 |RTL Design|
 | :--------: |
 |![RTL Design](https://github.com/mankelly/VerilogProjects/blob/1040136a56196a6bf64ee55356eb4fdfa4786470/8-bit%20CPU/images/RTL_Design.PNG)|
