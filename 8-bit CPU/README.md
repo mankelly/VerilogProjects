@@ -18,7 +18,7 @@
 * To write an instruction to memory, **wr** must be enabled and **opcode** must be filled.
 ### Below are all 16 operations (opcode[3:0])
 
-|opcode[3:0]|Operation|op/c_b|
+|opcode[3:0]|Operation|op / c_b|
 | :--------: | :----------: | :---------: |
 | 4'b0000 | add | N/A |
 | 4'b0001 | add w/ carry | c_b == carry |
