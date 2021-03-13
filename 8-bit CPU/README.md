@@ -1,5 +1,5 @@
 # 8-bit CPU [Manuel Kelly]
-### RISC 8-bit CPU written in SystemVerilog
+### 8-bit RISC CPU written in SystemVerilog
 * All ALU instructions were followed by this [Wikipedia page](https://en.wikipedia.org/wiki/Arithmetic_logic_unit).
 * For simplicity of testbenching, this CPU can write instructions to be written to memory.
 * The CPU reads instructions from memory, every clock cycle.
@@ -15,7 +15,7 @@
   * The **lower 4 bits [3:0]** are used for the operations. 
   * **Bit [4]** is used for shift left/right or doing a single operation on A/B (bit is labeled *op* in ALU).
   * **Bit [5]** is used for determining if there is a carry or borrow (bit is labeled *c_b* in ALU).
-* To write an instruction to memory, wr must be enabled and opcode must be filled.
+* To write an instruction to memory, **wr** must be enabled and **opcode** must be filled.
 ### Below are all 16 operations (opcode[3:0])
 
 |opcode[3:0]|Operation|op/c_b|
