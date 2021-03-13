@@ -18,6 +18,6 @@
 ### Below are all 16 operations (opcode[3:0])
 
 |opcode[3:0]|Operation|op/c_b|
-| :------- | ----: | :---: |
+| :-------: | :----: | :---: |
 | 4'b0000 | | add | | NA |
   
