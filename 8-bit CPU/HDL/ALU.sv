@@ -45,16 +45,16 @@ module ALU
                         Y <= A ^ B; 
                     4'b1011: //ones compliment
                         Y <= op ? ~A : ~B; // op = 1 is A, op = 0 is B
-                    4'b1100: //arithmetic shift (sign bit preserved) 
+                    4'b1100: //arithmetic shift A (sign bit preserved) 
                         // op == true (shift left) else shift right
-                        Y <= op ? Y <<< 1 : Y >>> 1; // <<< / >>> is arithmetic shift
-                    4'b1101: //logical shift 
+                        Y <= op ? A <<< 1 : A >>> 1; // <<< / >>> is arithmetic shift
+                    4'b1101: //logical shift A
                         // op == true (shift left) else shift right
-                        Y <= op ? Y << 1 : Y >> 1; // << / >> is logical shift
-                    4'b1110: //rotate
-                        Y <= op ? {Y[6:0], Y[7]} : {Y[0], Y[7:1]}; // if op == 1 rotate left, else rotate right
-                    4'b1111: //rotate through carry
-                        Y <= op ? {Y[6:0], c_b} : {c_b, Y[7:1]}; // if op == 1 rotate left, else rotate right
+                        Y <= op ? A << 1 : A >> 1; // << / >> is logical shift
+                    4'b1110: //rotate A
+                        Y <= op ? {A[6:0], A[7]} : {A[0], A[7:1]}; // if op == 1 rotate left, else rotate right
+                    4'b1111: //rotate through carry A
+                        Y <= op ? {A[6:0], c_b} : {c_b, A[7:1]}; // if op == 1 rotate left, else rotate right
                     default:
                         Y <= 0;
             endcase
