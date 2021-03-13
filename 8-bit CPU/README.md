@@ -32,10 +32,10 @@
 | 4'b1001 | or | N/A |
 | 4'b1010 | xor | N/A |
 | 4'b1011 | ones compliment | op == 1 comp A, else B |
-| 4'b1100 | arithmetic shift | op == 1 shift left, else shift right |
-| 4'b1101 | logical shift | op == 1 shift left, else shift right |
-| 4'b1110 | rotate | op == 1 rotate left, else rotate right |
-| 4'b1111 | rotate through carry | op == 1 rotate left, else rotate right; c_b == carry |
+| 4'b1100 | arithmetic shift A | op == 1 shift left, else shift right |
+| 4'b1101 | logical shift A | op == 1 shift left, else shift right |
+| 4'b1110 | rotate A | op == 1 rotate left, else rotate right |
+| 4'b1111 | rotate through carry A | op == 1 rotate left, else rotate right; c_b == carry |
 
 
 |RTL Design|
