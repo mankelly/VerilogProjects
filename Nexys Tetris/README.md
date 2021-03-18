@@ -23,3 +23,7 @@
   * Each of the 3 blocks have a total of four sprites for their rotations.
   * block_core stored 12 unique sprites.
 * 28 unique sprites were created and combined with 2 new cores for use in my game.
+
+|Video|
+|:--:|
+|[![VIDEO](https://i.ytimg.com/vi/3EtIybUcsiU/maxresdefault.jpg)](https://www.youtube.com/watch?v=3EtIybUcsiU&t=204s&ab_channel=Mvnkelly)|
