@@ -1,5 +1,4 @@
 # VerilogProjects
-All projects that utilize the Verilog &amp; SystemVerilog HDL's
 
 ### Above are my projects that involve Verilog &amp; SystemVerilog.
 Projects that I am currently working on:
