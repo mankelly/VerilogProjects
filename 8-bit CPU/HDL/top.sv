@@ -10,7 +10,7 @@ module top
         output logic [DATA_WIDTH-1: 0] Y
     );
     
-    logic [DATA_WIDTH-1: 0] instr, instr_next, pc, pc_next; //instruction register and program counter
+    logic [DATA_WIDTH-1: 0] instr, pc; //instruction register and program counter
     logic full, empty;
     logic [ADDR_WIDTH - 1: 0] wr_addr;
     
