@@ -9,27 +9,27 @@
   - 255 = 500 ms delay.
 - To change pause the LED, switch 15 will be used
 
-| [RTL DESIGN]() |
+| [RTL DESIGN] |
 | :------------: |
-| ![rtl]() |
+| ![rtl](https://github.com/mankelly/VerilogProjects/blob/master/Chasing%20LED%20Circuit/images/diagram.PNG) |
 
 
-| [Schematic]() |
+| [Schematic] |
 | :-----------: |
-| ![schem]() |
+| ![schem](https://github.com/mankelly/VerilogProjects/blob/master/Chasing%20LED%20Circuit/images/schematic.jpg) |
 
-| [Pause Test]() |
+| Pause Test |
 | :------------: |
-| ![stop]() |
+| ![pause](https://github.com/mankelly/VerilogProjects/blob/master/Chasing%20LED%20Circuit/images/sw%3D0%2Cstop%2Creset.PNG) |
 
-| [Testbench 1: 50ms Delay]() |
+| [Testbench 1: 50ms Delay](https://github.com/mankelly/VerilogProjects/blob/master/Chasing%20LED%20Circuit/Testbenches/midterm_tb.sv) |
 | :-------------------------: |
-| ![tb1]() |
+| ![tb1](https://github.com/mankelly/VerilogProjects/blob/master/Chasing%20LED%20Circuit/images/sw%3D0.PNG) |
 
-| [Testbench 2: 500ms Delay]() |
+| [Testbench 2: 500ms Delay](https://github.com/mankelly/VerilogProjects/blob/master/Chasing%20LED%20Circuit/Testbenches/midterm_tb2.sv) |
 | :-------------------------: |
-| ![tb2]() |
+| ![tb2](https://github.com/mankelly/VerilogProjects/blob/master/Chasing%20LED%20Circuit/images/sw%3D127.PNG) |
 
-| [Testbench 3: 275ms Delay]() |
+| [Testbench 3: 275ms Delay](https://github.com/mankelly/VerilogProjects/blob/master/Chasing%20LED%20Circuit/Testbenches/midterm_tb3.sv) |
 | :-------------------------: |
-| ![tb3]() |
+| ![tb3](https://github.com/mankelly/VerilogProjects/blob/master/Chasing%20LED%20Circuit/images/sw%3D255.PNG) |
