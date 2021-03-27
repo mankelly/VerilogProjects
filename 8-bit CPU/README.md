@@ -1,5 +1,6 @@
 # 8-bit CPU [Manuel Kelly]
-### 8-bit RISC CPU written in SystemVerilog [INCOMPLETE TESTBENCH]
+### 8-bit Simple CPU written in SystemVerilog [INCOMPLETE TESTBENCH]
+* DOES NOT HAVE A WRITE BACK FUNCTION. ALU outputs data and user inputs data.
 * TB does not show all operations.
 * All ALU instructions were followed by this [Wikipedia page](https://en.wikipedia.org/wiki/Arithmetic_logic_unit).
 * For simplicity of testbenching, this CPU can write instructions to be written to memory.
