@@ -1,4 +1,8 @@
 # 8-bit CPU [Manuel Kelly]
+### THIS IS NOT A FULL CPU [EDIT]
+* I wrote this before I knew much about CPU architecture.
+* I am leaving this project to show my progession with CPU design.
+
 ### 8-bit Simple CPU written in SystemVerilog [INCOMPLETE TESTBENCH]
 * DOES NOT HAVE A WRITE BACK FUNCTION. ALU outputs data and user inputs data.
 * TB does not show all operations.
