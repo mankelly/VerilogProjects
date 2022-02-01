@@ -20,7 +20,7 @@ I-Type:
 
 J-Type: 
 |15-  OPCODE  -12|11-  ADDR  -0|
- </center>
+ <center/>
 
 
 ### Below are all 16 operations (instr[3:0] = IR[15:12])
