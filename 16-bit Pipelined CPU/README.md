@@ -25,6 +25,7 @@ J-Type:
 
 
 ### Below are all 16 operations (instr[3:0] = IR[15:12])
+
 <center>
 |instr[3:0]|Operation|
 | :--------: | :----------: |
