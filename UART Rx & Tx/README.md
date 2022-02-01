@@ -1,4 +1,4 @@
-# uART Receive and Transmit Modules
+# UART Receive and Transmit Modules
 
 ### Basic Uart Rx and Tx modules used for serial communication with a host.
 * Each Rx & Tx module are state machines that are implemented with the Baud_Gen.sv.
