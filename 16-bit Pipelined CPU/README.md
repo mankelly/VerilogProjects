@@ -23,9 +23,10 @@ J-Type:
 |15-  OPCODE  -12|11-  ADDR  -0|
 | :----: | :----: |
 
-### Below are all 16 operations (opcode[3:0])
 
-|opcode[3:0]|Operation|
+### Below are all 16 operations (instr[3:0] = IR[15:12])
+
+|instr[3:0]|Operation|
 | :--------: | :----------: |
 | 4'b0000 | NO OP |
 | 4'b0001 | LOAD |
