@@ -11,22 +11,20 @@
 * Below is the Register Map used for this 16-bit CPU.
 
 ### IR[15:0]
+<center>
 R-Type: 
-|15-  OPCODE  -12|11-  Rd  -8|7-  Rs  -4|3-  Rt  -0|
-| :----: | :----: | :----: | :----: |
+|15-  OPCODE  -12|11-  Rd  -8|7-  Rs  -4|3-  Rt  -0
         
 I-Type: 
 |15-  OPCODE  -12|11-  Rd  -8|7- IMM/ADDR  -0|
-| :----: | :----: | :----: |
 
 J-Type: 
 |15-  OPCODE  -12|11-  ADDR  -0|
-| :----: | :----: |
+ </center>
 
 
 ### Below are all 16 operations (instr[3:0] = IR[15:12])
 
-<center>
 |instr[3:0]|Operation|
 | :--------: | :----------: |
 | 4'b0000 | NO OP |
@@ -45,7 +43,6 @@ J-Type:
 | 4'b1101 | SUBTRACT |
 | 4'b1110 | MULTIPLY |
 | 4'b1111 | JUMP |
-</center>
 
 [comment]: <> (UPDATE ALL OF THIS LATER)
 
