@@ -11,19 +11,21 @@
 * Below is the Register Map used for this 16-bit CPU.
 
 ### IR[15:0]
-<center>
 R-Type: 
-|15-  OPCODE  -12|11-  Rd  -8|7-  Rs  -4|3-  Rt  -0
+|15-  OPCODE  -12|11-  Rd  -8|7-  Rs  -4|3-  Rt  -0|
+| :----: | :----: | :----: | :----: |
         
 I-Type: 
 |15-  OPCODE  -12|11-  Rd  -8|7- IMM/ADDR  -0|
+| :----: | :----: | :----: |
 
 J-Type: 
 |15-  OPCODE  -12|11-  ADDR  -0|
- <center/>
+| :----: | :----: |
 
 
 ### Below are all 16 operations (instr[3:0] = IR[15:12])
+* Only instructions 4'b0101 to 4'b1110 are passed through the ALU.
 
 |instr[3:0]|Operation|
 | :--------: | :----------: |
