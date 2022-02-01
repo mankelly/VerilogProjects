@@ -25,7 +25,7 @@ J-Type:
 
 
 ### Below are all 16 operations (instr[3:0] = IR[15:12])
-<p align="center">
+<center>
 |instr[3:0]|Operation|
 | :--------: | :----------: |
 | 4'b0000 | NO OP |
@@ -44,7 +44,7 @@ J-Type:
 | 4'b1101 | SUBTRACT |
 | 4'b1110 | MULTIPLY |
 | 4'b1111 | JUMP |
-<p/>
+</center>
 
 [comment]: <> (UPDATE ALL OF THIS LATER)
 
