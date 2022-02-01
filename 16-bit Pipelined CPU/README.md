@@ -11,7 +11,8 @@
 * Below is the Register Map used for this 16-bit CPU.
 
 ### IR[15:0]
-R-Type: |15-  OPCODE  -12|11-  Rd  -8|7-  Rs  -4|3-  Rt  -0|
+R-Type: 
+        |15-  OPCODE  -12|11-  Rd  -8|7-  Rs  -4|3-  Rt  -0|
         | :----: | :----: | :----: | :----: |
         
 I-Type: |15-  OPCODE  -12|11-  Rd  -8|7- IMM/ADDR  -0|
