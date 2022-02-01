@@ -49,8 +49,8 @@ J-Type:
 
 [comment]: <> (|RTL Design| )
 [comment]: <> (| :--------: | )
-[comment]: <> (|![RTL Design](https://github.com/mankelly/VerilogProjects/blob/1040136a56196a6bf64ee55356eb4fdfa4786470/8-bit%20CPU/images/RTL_Design.PNG)| )
+[comment]: <> (| | )
 
-[comment]: <> (|[Testbench1](https://github.com/mankelly/VerilogProjects/blob/master/8-bit%20CPU/cpu_tb.sv)| )
-[comment]: <> (| :--------: | )
-[comment]: <> (|![TB1](https://github.com/mankelly/VerilogProjects/blob/a88aa6bab3003fe54ee7b314b9484a62cb4bf4c4/8-bit%20CPU/images/tb1.PNG)| )
+[comment]: <> (|Testbench1|)
+[comment]: <> (| :--------: |)
+[comment]: <> (| |)
