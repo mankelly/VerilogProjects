@@ -15,33 +15,34 @@ R-Type:
 |15-  OPCODE  -12|11-  Rd  -8|7-  Rs  -4|3-  Rt  -0|
 | :----: | :----: | :----: | :----: |
         
-I-Type: |15-  OPCODE  -12|11-  Rd  -8|7- IMM/ADDR  -0|
-        | :----: | :----: | :----: |
+I-Type: 
+|15-  OPCODE  -12|11-  Rd  -8|7- IMM/ADDR  -0|
+| :----: | :----: | :----: |
 
-J-Type: |15-  OPCODE  -12|11-  ADDR  -0|
-        | :----: | :----: |
+J-Type: 
+|15-  OPCODE  -12|11-  ADDR  -0|
+| :----: | :----: |
 
-* To write an instruction to memory, **wr** must be enabled and **opcode** must be filled.
 ### Below are all 16 operations (opcode[3:0])
 
-|opcode[3:0]|Operation|op / c_b|
-| :--------: | :----------: | :---------: |
-| 4'b0000 | add | N/A |
-| 4'b0001 | add w/ carry | c_b == carry |
-| 4'b0010 | subtract | N/A |
-| 4'b0011 | subtract w/ borrow | c_b == borrow |
-| 4'b0100 | twos compliment | op == 1 comp A, else B |
-| 4'b0101 | increment | op == 1 inc A, else B |
-| 4'b0110 | decrement | op == 1 dec A, else B |
-| 4'b0111 | pass through | op == 1 pass A, else B |
-| 4'b1000 | and | N/A |
-| 4'b1001 | or | N/A |
-| 4'b1010 | xor | N/A |
-| 4'b1011 | ones compliment | op == 1 comp A, else B |
-| 4'b1100 | arithmetic shift A | op == 1 shift left, else shift right |
-| 4'b1101 | logical shift A | op == 1 shift left, else shift right |
-| 4'b1110 | rotate A | op == 1 rotate left, else rotate right |
-| 4'b1111 | rotate through carry A | op == 1 rotate left, else rotate right; c_b == carry |
+|opcode[3:0]|Operation|
+| :--------: | :----------: |
+| 4'b0000 | NO OP |
+| 4'b0001 | LOAD |
+| 4'b0010 | LOAD IMMEDIATE |
+| 4'b0011 | STORE |
+| 4'b0100 | MOVE |
+| 4'b0101 | AND |
+| 4'b0110 | OR |
+| 4'b0111 | XOR |
+| 4'b1000 | ONE'S COMPLIMENT |
+| 4'b1001 | TWO'S COMPLIMENT |
+| 4'b1010 | SHIFT LEFT |
+| 4'b1011 | SHIFT RIGHT |
+| 4'b1100 | ADD |
+| 4'b1101 | SUBTRACT |
+| 4'b1110 | MULTIPLY |
+| 4'b1111 | JUMP |
 
 
 |RTL Design|
