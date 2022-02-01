@@ -45,7 +45,7 @@ J-Type:
 | 4'b1110 | MULTIPLY |
 | 4'b1111 | JUMP |
 
-[comment]: UPDATE ALL OF THIS LATER
+[comment]: <> (UPDATE ALL OF THIS LATER)
 
 [comment]:|RTL Design|
 | :--------: |
