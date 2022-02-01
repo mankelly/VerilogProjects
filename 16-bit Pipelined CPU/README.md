@@ -45,8 +45,9 @@ J-Type:
 | 4'b1110 | MULTIPLY |
 | 4'b1111 | JUMP |
 
+[comment]: UPDATE ALL OF THIS LATER
 
-|RTL Design|
+[comment]:|RTL Design|
 | :--------: |
 |![RTL Design](https://github.com/mankelly/VerilogProjects/blob/1040136a56196a6bf64ee55356eb4fdfa4786470/8-bit%20CPU/images/RTL_Design.PNG)|
 
