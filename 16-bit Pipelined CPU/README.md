@@ -1,30 +1,24 @@
-# 8-bit CPU [Manuel Kelly]
-### THIS IS NOT A FULL CPU [EDIT]
-* I wrote this before I knew much about CPU architecture.
-* I am leaving this project to show my progession with CPU design.
+# 16-bit 5-Stage Pipelined CPU [Manuel Kelly]
 
-### 8-bit Simple CPU written in SystemVerilog [INCOMPLETE TESTBENCH]
-* DOES NOT HAVE A WRITE BACK FUNCTION. ALU outputs data and user inputs data.
+### 16-bit 5-Stage Pipelined CPU written in SystemVerilog [INCOMPLETE TESTBENCH]
 * TB does not show all operations.
-* All ALU instructions were followed by this [Wikipedia page](https://en.wikipedia.org/wiki/Arithmetic_logic_unit).
-* For simplicity of testbenching, this CPU can write instructions to be written to memory.
+* All ALU instructions are basic "common" CPU instrctions.
 * The CPU reads instructions from memory, every clock cycle.
-* Once memory empty flag rises, CPU stops and waits for more instructions to be executed.
 * Below is the following I/O you will need to know to use the CPU:
-  * clk, reset.
-  * wr (write enable to write instructions to memory).
-  * A, B (data that will be used for operations in the ALU [EX: add A, B]).
-  * opcode (tells the ALU what operation to perform).
-  * Y (output of the ALU).
+  * clk.
+  * resetn.
 
-* The ALU observes the **opcode[7:0]**, but not all 8-bit values. Few bits are ignored. 
-  * The **lower 4 bits [3:0]** are used for the operations. 
-  * **Bit [4]** is used for shift left/right or doing a single operation on A/B (bit is labeled *op* in ALU).
-  * **Bit [5]** is used for determining if there is a carry or borrow (bit is labeled *c_b* in ALU).
+* Below is the Register Map used for this 16-bit CPU.
 
-### opcode[7:0]
-|7-  UNUSED  -6|5  c_b  |4  op  |3-  opcode  -0|
-| :----: | :----: | :----: | :----: |
+### IR[15:0]
+R-Type: |15-  OPCODE  -12|11-  Rd  -8|7-  Rs  -4|3-  Rt  -0|
+        | :----: | :----: | :----: | :----: |
+        
+I-Type: |15-  OPCODE  -12|11-  Rd  -8|7- IMM/ADDR  -0|
+        | :----: | :----: | :----: |
+
+J-Type: |15-  OPCODE  -12|11-  ADDR  -0|
+        | :----: | :----: |
 
 * To write an instruction to memory, **wr** must be enabled and **opcode** must be filled.
 ### Below are all 16 operations (opcode[3:0])
